@@ -20,7 +20,7 @@
     <!-- end header -->
 
     <!-- content -->
-    @section('content')
+    @yield('content')
 
 
 </body>

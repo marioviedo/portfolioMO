@@ -2,13 +2,15 @@
 
 namespace App\Http\Controllers;
 
+use App\Models\Technology;
 use Illuminate\Http\Request;
 
 class indexController extends Controller
 {
     public function index()
     {
-        return view('welcome');
+        $technology = Technology::all();
+        return view('welcome', compact('technology'));
     }
 
     public function viewProjects()
