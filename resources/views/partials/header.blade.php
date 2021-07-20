@@ -1,4 +1,4 @@
-<header>
+<header class="dark">
     
     <div class="w-full text-gray-700 bg-white dark:text-gray-200 dark:bg-gray-800">
 
