@@ -11,17 +11,16 @@
     <link rel="stylesheet" href="{{asset('css/app.css')}}">
 
     <!-- JS scripts -->
-    <script src="https://cdn.jsdelivr.net/gh/alpinejs/alpine@v2.x.x/dist/alpine.min.js" defer></script>
+    <script defer src="https://unpkg.com/alpinejs@3.x.x/dist/cdn.min.js"></script>
 
 </head>
-<body class="font-mono">
+<body class="font-mono" x-data="{ 'isDark': false}">
     <!-- header -->
     @include('partials.header')
     <!-- end header -->
 
     <!-- content -->
     @yield('content')
-
 
 </body>
 </html>
