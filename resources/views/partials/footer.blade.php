@@ -23,7 +23,7 @@
                     <!-- end image -->
                     <!-- link -->
                     <div>
-                        <a href="https://www.linkedin.com/in/mario-oviedo-ba%C3%B1os-358331201/">Linkedin</a>
+                        <a href="https://www.linkedin.com/in/mario-oviedo-ba%C3%B1os-358331201/" target="_blank">Linkedin</a>
                     </div>
                     <!-- end link -->
                 </div>
@@ -48,7 +48,7 @@
                     <!-- end image -->
                     <!-- link -->
                     <div>
-                        <a href="https://github.com/marioviedo">GitHub</a>
+                        <a href="https://github.com/marioviedo" target="_blank">GitHub</a>
                     </div>
                     <!-- end link -->
                 </div>
@@ -59,11 +59,12 @@
 
         <!-- Download CV zone -->
         <div class="flex-grow">
-            <span class="font-semibold">Download CV</span>
+            <span class="font-semibold">Download CV and repository</span>
             <!-- buttons -->
             <div class="container flex flex-col px-2 mx-auto gap-3">
                 <a href="{{route('downloadCV', 'EN')}}">Download CV in English</a>
                 <a href="{{route('downloadCV', 'ES')}}">Download CV in Spanish</a>
+                <a href="https://github.com/marioviedo/portfolioMO" target="_blank">Download this project's repository</a>
             </div>
             <!-- end buttons -->
         </div>
