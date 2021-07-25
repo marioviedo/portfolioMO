@@ -19,3 +19,5 @@ Route::get('/', [indexController::class, 'index'])->name('home');
 Route::get('projects', [indexController::class, 'viewProjects'])->name('projects');
 
 Route::get('contact', [indexController::class, 'viewContact'])->name('contact');
+
+Route::get('downloadCV/{lang}', [indexController::class, 'downloadCV'])->name('downloadCV');
