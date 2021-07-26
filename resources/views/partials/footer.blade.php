@@ -1,5 +1,18 @@
 <footer>
     <div class="container py-4 flex flex-wrap mx-auto text-center gap-3 text-xs md:text-sm lg:text-sm xl:text-base">
+        <!-- Download CV zone -->
+        <div class="flex-grow">
+            <span class="font-semibold">Download CV and repository</span>
+            <!-- buttons -->
+            <div class="container flex flex-col px-2 mx-auto gap-3">
+                <a href="{{route('downloadCV', 'EN')}}">Download CV in English</a>
+                <a href="{{route('downloadCV', 'ES')}}">Download CV in Spanish</a>
+                <a href="https://github.com/marioviedo/portfolioMO" target="_blank">Download this project's repository</a>
+            </div>
+            <!-- end buttons -->
+        </div>
+        <!-- end Download CV zone -->
+
         <!-- Social Media zone -->
         <div class="flex-grow">
             <span class="font-semibold">Social Media</span>
@@ -56,19 +69,6 @@
             </div>
         </div>
         <!-- end Social Media zone -->
-
-        <!-- Download CV zone -->
-        <div class="flex-grow">
-            <span class="font-semibold">Download CV and repository</span>
-            <!-- buttons -->
-            <div class="container flex flex-col px-2 mx-auto gap-3">
-                <a href="{{route('downloadCV', 'EN')}}">Download CV in English</a>
-                <a href="{{route('downloadCV', 'ES')}}">Download CV in Spanish</a>
-                <a href="https://github.com/marioviedo/portfolioMO" target="_blank">Download this project's repository</a>
-            </div>
-            <!-- end buttons -->
-        </div>
-        <!-- end Download CV zone -->
 
         <!-- About zone -->
         <div class="flex-grow">
