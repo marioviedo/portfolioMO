@@ -2,7 +2,9 @@
 
 namespace Database\Seeders;
 
+use App\Models\Post;
 use App\Models\Technology;
+
 use Illuminate\Database\Seeder;
 
 class DatabaseSeeder extends Seeder
@@ -16,5 +18,6 @@ class DatabaseSeeder extends Seeder
     {
         // \App\Models\User::factory(10)->create();
         Technology::factory(10)->create();
+        Post::factory(10)->create();
     }
 }
