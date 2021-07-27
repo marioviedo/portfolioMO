@@ -4,7 +4,7 @@ use Illuminate\Database\Migrations\Migration;
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Support\Facades\Schema;
 
-class CreateTechnologiesTable extends Migration
+class AddFillToTechnologiesTable extends Migration
 {
     /**
      * Run the migrations.
@@ -13,11 +13,8 @@ class CreateTechnologiesTable extends Migration
      */
     public function up()
     {
-        Schema::create('technologies', function (Blueprint $table) {
-            $table->id();
-            $table->string('title');
-            $table->text('image');
-            $table->timestamps();
+        Schema::table('technologies', function (Blueprint $table) {
+            $table->string('fill')->after('image')->nullable();
         });
     }
 
@@ -28,6 +25,8 @@ class CreateTechnologiesTable extends Migration
      */
     public function down()
     {
-        Schema::dropIfExists('technologies');
+        Schema::table('technologies', function (Blueprint $table) {
+            $table->dropColumn('fill');
+        });
     }
 }

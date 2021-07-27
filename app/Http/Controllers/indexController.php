@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers;
 
+use App\Models\Post;
 use App\Models\Technology;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Storage;
@@ -10,8 +11,9 @@ class indexController extends Controller
 {
     public function index()
     {
-        $technology = Technology::all();
-        return view('welcome', compact('technology'));
+        $technologies = Technology::all();
+        $posts = Post::all();
+        return view('welcome', compact('technologies', 'posts'));
     }
 
     public function viewProjects()
