@@ -1,5 +1,5 @@
 <footer>
-    <div class="container py-4 flex flex-wrap mx-auto text-center gap-3 text-xs md:text-sm lg:text-sm xl:text-base">
+    <div class="container py-4 flex flex-wrap divide-x divide-gray-700 dark:divide-white mx-auto text-center gap-3 text-xs md:text-sm lg:text-sm xl:text-base">
         <!-- Download CV zone -->
         <div class="flex-grow">
             <span class="font-semibold">Download CV and repository</span>
@@ -16,7 +16,7 @@
         <!-- Social Media zone -->
         <div class="flex-grow">
             <span class="font-semibold">Social Media</span>
-            <div class="container flex flex-col px-2 mx-auto gap-3">
+            <div class="container flex flex-col px-2 mx-auto gap-3 ml-4">
                 <!-- Linkedin button -->
                 <div class="flex flex-row gap-3">
                     <!-- image -->

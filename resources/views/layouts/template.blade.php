@@ -19,9 +19,9 @@
     x-init="
         isDark = JSON.parse(localStorage.getItem('isDark'));
         $watch('isDark', value => localStorage.setItem('isDark', JSON.stringify(value)));" 
-    :class="{'dark':isDark === true}" 
-    class="font-mono">
-    <div class="text-gray-700 bg-white dark:text-gray-200 dark:bg-gray-800">
+    :class="{'dark bg-gray-800 ':isDark === true}" 
+    class="font-mono ">
+    <div class="text-gray-700 bg-white dark:text-gray-200 dark:bg-gray-800 w-screen">
         <!-- header -->
         @include('partials.header')
         <!-- end header -->
