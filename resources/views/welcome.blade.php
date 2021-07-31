@@ -43,7 +43,7 @@
     <div class="container px-2 mx-auto my-10 py-6">
         <div class="text-center py-3">
             <span class="text-3xl antialiased font-semibold">Projects</span><br>
-            <span class="text-xl antialiased font-medim">Some projects where I can participate also you can view all the projects <a href="{{route('projects')}}">here</a></span>
+            <span class="text-xl antialiased font-medim">Some projects where I can participate also you can view all the projects <a class=" underline" href="{{route('projects')}}">here</a></span>
         </div>
         <div class="flex flex-row flex-wrap gap-6 text-center">
             @foreach ($posts as $item)
