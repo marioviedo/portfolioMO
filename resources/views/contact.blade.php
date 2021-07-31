@@ -4,6 +4,23 @@
 
 @section('content')
 <div class="container px-2 mx-auto py-4">
+    @if (isset($validate))
+        <div class="flex bg-green-200 dark:bg-green-600 mb-4">
+            <div class="w-16 bg-green">
+                <div class="p-4">
+                    <svg class="h-8 w-8 text-white fill-current" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path d="M468.907 214.604c-11.423 0-20.682 9.26-20.682 20.682v20.831c-.031 54.338-21.221 105.412-59.666 143.812-38.417 38.372-89.467 59.5-143.761 59.5h-.12C132.506 459.365 41.3 368.056 41.364 255.883c.031-54.337 21.221-105.411 59.667-143.813 38.417-38.372 89.468-59.5 143.761-59.5h.12c28.672.016 56.49 5.942 82.68 17.611 10.436 4.65 22.659-.041 27.309-10.474 4.648-10.433-.04-22.659-10.474-27.309-31.516-14.043-64.989-21.173-99.492-21.192h-.144c-65.329 0-126.767 25.428-172.993 71.6C25.536 129.014.038 190.473 0 255.861c-.037 65.386 25.389 126.874 71.599 173.136 46.21 46.262 107.668 71.76 173.055 71.798h.144c65.329 0 126.767-25.427 172.993-71.6 46.262-46.209 71.76-107.668 71.798-173.066v-20.842c0-11.423-9.259-20.683-20.682-20.683z"/><path d="M505.942 39.803c-8.077-8.076-21.172-8.076-29.249 0L244.794 271.701l-52.609-52.609c-8.076-8.077-21.172-8.077-29.248 0-8.077 8.077-8.077 21.172 0 29.249l67.234 67.234a20.616 20.616 0 0 0 14.625 6.058 20.618 20.618 0 0 0 14.625-6.058L505.942 69.052c8.077-8.077 8.077-21.172 0-29.249z"/></svg>
+                </div>
+            </div>
+            <div class="w-auto text-grey-darker items-center p-4">
+                <span class="text-lg font-bold pb-4">
+                    Message sent!
+                </span>
+                <p class="leading-tight">
+                    The message has been sent correctly
+                </p>
+            </div>
+        </div>
+    @endif
     <div class="px-2 text-lg text-center">
         <p>Contact me through my professional social networks:</p>
     </div>  
@@ -12,7 +29,7 @@
         <!-- Whatsapp button -->                                    
         <div>
             <a href="https://api.whatsapp.com/send?phone=527713004765" target="_blank">
-                <svg class="w-16" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+                <svg class="w-16" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
                     viewBox="0 0 418.135 418.135" style="enable-background:new 0 0 418.135 418.135;" xml:space="preserve">
                     <path style="fill:#7AD06D;" d="M198.929,0.242C88.5,5.5,1.356,97.466,1.691,208.02c0.102,33.672,8.231,65.454,22.571,93.536
                         L2.245,408.429c-1.191,5.781,4.023,10.843,9.766,9.483l104.723-24.811c26.905,13.402,57.125,21.143,89.108,21.631
@@ -33,7 +50,7 @@
         <!-- LinkedIn button -->                                    
         <div>
             <a href="https://www.linkedin.com/in/mario-oviedo-ba%C3%B1os-358331201/" target="_blank">
-                <svg class="w-16" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 382 382" style="enable-background:new 0 0 382 382;" xml:space="preserve">
+                <svg class="w-16" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 382 382" style="enable-background:new 0 0 382 382;" xml:space="preserve">
                     <path class="" style="fill:#0077B7;" d="M347.445,0H34.555C15.471,0,0,15.471,0,34.555v312.889C0,366.529,15.471,382,34.555,382h312.889
                         C366.529,382,382,366.529,382,347.444V34.555C382,15.471,366.529,0,347.445,0z M118.207,329.844c0,5.554-4.502,10.056-10.056,10.056
                         H65.345c-5.554,0-10.056-4.502-10.056-10.056V150.403c0-5.554,4.502-10.056,10.056-10.056h42.806
@@ -51,7 +68,7 @@
         <!-- Instagram button -->                                    
         <div>
             <a href="https://github.com/marioviedo" target="_blank">
-                <svg class="w-16" version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"viewBox="0 0 512 512" style="enable-background:new 0 0 512 512;" xml:space="preserve">
+                <svg class="w-16" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"viewBox="0 0 512 512" style="enable-background:new 0 0 512 512;" xml:space="preserve">
                     <path d="M255.968,5.329C114.624,5.329,0,120.401,0,262.353c0,113.536,73.344,209.856,175.104,243.872
                         c12.8,2.368,17.472-5.568,17.472-12.384c0-6.112-0.224-22.272-0.352-43.712c-71.2,15.52-86.24-34.464-86.24-34.464
                         c-11.616-29.696-28.416-37.6-28.416-37.6c-23.264-15.936,1.728-15.616,1.728-15.616c25.696,1.824,39.2,26.496,39.2,26.496
@@ -74,7 +91,8 @@
     <!-- form -->
     <div class="container px-2 mx-auto flex justify-center py-4">
         <div class="rounded-lg border-2 border-gray-700">
-            <form class="p-6 text-lg" action="{{route('contact')}}" method="post">
+            <form class="p-6 text-lg" action="{{route('contact.create')}}" method="post">
+                @csrf
                 <div class="flex justify-center gap-3 pb-4">
                     <label class="flex items-center" for="name">Name:</label>
                     <input class="border-2 border-gray-700 py-2 px-3 text-black rounded-md flex-grow" type="text" id="name" name="name">
@@ -85,7 +103,7 @@
                 </div>
                 <div class="flex gap-3 pb-4">
                     <label class="flex items-center" for="phone">Phone number: </label>
-                    <input class="border-2 border-gray-700 py-2 px-3 text-black rounded-md flex-grow" type="number" id="phone" name="phone">
+                    <input class="border-2 border-gray-700 py-2 px-3 text-black rounded-md flex-grow" type="number" id="phone_number" name="phone_number">
                 </div>
                 <div class="flex flex-col gap-3 pb-4">
                     <label class="flex items-center" for="message">Message: </label>
