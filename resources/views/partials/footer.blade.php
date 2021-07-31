@@ -1,5 +1,5 @@
 <footer>
-    <div class="container py-4 flex flex-wrap divide-x divide-gray-700 dark:divide-white mx-auto text-center gap-3 text-xs md:text-sm lg:text-sm xl:text-base">
+    <div class="container px-2 mx-auto py-4 flex flex-wrap divide-x divide-gray-700 dark:divide-white text-center gap-3 text-xs md:text-sm lg:text-sm xl:text-base">
         <!-- Download CV zone -->
         <div class="flex-grow">
             <span class="font-semibold">Download CV and repository</span>

@@ -4,7 +4,7 @@
 
 @section('content')
     <!-- welcome -->
-    <div class="container flex flex-grow justify-center flex-wrap text-right text-xl lg:px-3 my-10 py-6">
+    <div class="container px-2 mx-auto flex flex-grow justify-center flex-wrap text-right text-xl lg:px-3 my-10 py-6">
         <div class="flex flex-row flex-wrap">
             <div class="flex flex-grow lg:flex-grow-0 xl:flex-grow-0 2xl:flex-grow-0">
                 <span class="tracking-wider leading-loose">
@@ -26,7 +26,7 @@
     <!-- end welcome -->
 
     <!-- Technologies -->
-    <div class="container my-10 py-6">
+    <div class="container px-2 mx-auto my-10 py-6">
         <div class="text-center py-3"><span class="text-3xl antialiased font-semibold">Technologies</span></div>
         <div class="flex flex-row flex-wrap gap-6 text-center">
             @foreach ($technologies as $item)
@@ -40,7 +40,7 @@
     <!-- end Technologies -->
 
     <!-- Projects -->
-    <div class="container my-10 py-6">
+    <div class="container px-2 mx-auto my-10 py-6">
         <div class="text-center py-3">
             <span class="text-3xl antialiased font-semibold">Projects</span><br>
             <span class="text-xl antialiased font-medim">Some projects where I can participate also you can view all the projects <a href="{{route('projects')}}">here</a></span>

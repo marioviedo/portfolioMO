@@ -21,7 +21,7 @@
         $watch('isDark', value => localStorage.setItem('isDark', JSON.stringify(value)));" 
     :class="{'dark bg-gray-800 ':isDark === true}" 
     class="font-mono ">
-    <div class="text-gray-700 bg-white dark:text-gray-200 dark:bg-gray-800 w-screen">
+    <div class="container px-2 mx-auto text-gray-700 bg-white dark:text-gray-200 dark:bg-gray-800">
         <!-- header -->
         @include('partials.header')
         <!-- end header -->
